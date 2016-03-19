@@ -28,6 +28,6 @@ class Solution(object):
         return res
 
 
-test = Solution()
-print test.convert("AB", 1)
+# test = Solution()
+# print test.convert("AB", 1)
 

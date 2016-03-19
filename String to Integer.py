@@ -24,7 +24,7 @@ class Solution(object):
         	MIN = -(2**31)
         	temp = signal*intger
         	if temp >=MAX: 
-        		return MAX
+        		return MAX 
         	elif temp <= MIN:
         		return MIN
         	i = i+1
