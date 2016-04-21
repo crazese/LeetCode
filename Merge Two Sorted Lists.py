@@ -12,13 +12,12 @@ class Solution(object):
         :rtype: ListNode
         """
         node = None
+        head = None
         if l1 is None:
-            l3 = l2
-            return h
+            return l2
         if l2 is None:
-            l3 = l1
-            return h
-        while l1.next is not None and l2.next is not None:
+            return l1
+        while l1 is not None and l2 is not None:
             if l1.val<l2.val:
                 if node is None:
                     node = l1
@@ -37,10 +36,10 @@ class Solution(object):
                     node = node.next
                 l2 = l2.next
 
-        while l1.next is not None:
+        if l1 is not None:
             node.next = l1
 
-        while l2.next is not None:
+        if l2 is not None:
             node.next = l2
 
         return head

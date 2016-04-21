@@ -40,5 +40,5 @@ class Solution(object):
 
         return self.resAll
 
-test = Solution()
-print test.threeSum([0,0,0,0])
+# test = Solution()
+# print test.threeSum([0,0,0,0])

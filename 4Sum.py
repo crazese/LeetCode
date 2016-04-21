@@ -27,10 +27,4 @@ class Solution(object):
 
         return [i for i in res]
 
-
-
-
-    
-test = Solution()
-print test.fourSum([1 ,0 ,-1 ,0 ,-2 ,2],0)
         

@@ -11,14 +11,9 @@ class Solution(object):
         	return romanDict[s]
         res = 0
         for i in xrange(l-1):
-        	print romanDict.get(s[i])
         	if romanDict.get(s[i+1]) <= romanDict.get(s[i]):
         		res = res + romanDict.get(s[i])
         	else:
         		res = res - romanDict.get(s[i])
         res = res+romanDict.get(s[l-1])
         return res
-
-
-test = Solution()
-print test.romanToInt("DCXXI")

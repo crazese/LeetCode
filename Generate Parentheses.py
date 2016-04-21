@@ -6,7 +6,6 @@ class Solution(object):
         """
         self.res = []
         self.generateTemp(n,n,'',[])
-        print 'res',self.res
         return self.res
 
     def generateTemp(self,left, right, s, res):
@@ -20,8 +19,3 @@ class Solution(object):
 
         if left<right:
             self.generateTemp(left,right-1,s+')',res)
-
-
-
-test = Solution()
-print test.generateParenthesis(3)
